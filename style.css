@@ -38,6 +38,7 @@ p, .eth span:last-child {
 }
 
 body {
+    height: 100vh;
     justify-content: center;
     align-items: center;
     gap: 10px;
