@@ -17,6 +17,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
+
 }
 
 :root {
@@ -45,7 +46,9 @@ body {
     background-color: var(--Very-dark-blue-main-bg);
 }
 
-.container, .container img {
+
+
+.container, .realtive, .child {
     border-radius: 10px;
 }
 
@@ -57,10 +60,37 @@ body {
     gap: 15px;
 }
 
+
+
+.realtive {
+    background: url(/images/image-equilibrium.jpg);
+    width: 310px;
+    height: 310px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+
+}
+
+.child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 310px;
+    visibility: hidden;
+    background-color: rgba(0, 255, 255, 0.623);
+    transition: all 0.3s;
+}
+
+.realtive:hover .child {
+    visibility: visible;
+ }
+
+
 .content {
     color: var(--White);
     gap: 20px;
-    height: 300px;
 }
 
 .content h1 {
@@ -105,4 +135,14 @@ body {
     width: 40px;
     border: 1px solid var(--White);
     border-radius: 50%;
+}
+
+.user span {
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.user span:hover {
+    color: aqua;
 }
